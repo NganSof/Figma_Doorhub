@@ -1,0 +1,607 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  position: relative;
+}
+.page header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.page header .hedear--navbar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.page header .hedear--navbar ul li {
+  margin-bottom: 5px;
+  margin-left: 50px;
+  border-bottom: 2px solid #2e2c49;
+  cursor: pointer;
+}
+.page header .hedear--navbar ul li:hover {
+  border-bottom: none;
+}
+.page header .hedear--contact button {
+  outline: none;
+  border: none;
+  border-radius: 27px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+  box-shadow: 0px 9px 13px #678dd1;
+}
+.page footer {
+  max-width: 1280px;
+  margin: auto;
+}
+.page footer .footer-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+.page footer .footer-top div {
+  width: 250px;
+}
+.page footer .footer-top div p {
+  font-size: small;
+  width: 250px;
+}
+.page footer .footer-top div:first-child {
+  height: 215px;
+}
+.page footer .footer-top div:last-child {
+  height: 279px;
+}
+.page footer .footer-top div img {
+  width: 175px;
+}
+.page footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.page footer .footer-bottom .footer--icon button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transform: scale(1.5);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.page footer .footer-bottom .footer--icon button:hover {
+  color: #2e2c49;
+  transform: scale(2.5);
+}
+.page .content section .text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+.page .content section .text .text--img img {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page .content section .text .text--content h1 {
+  width: 526px;
+  font-size: 70px;
+}
+.page .content section .text .text--content p {
+  width: 400px;
+}
+.page .content section .text .text--content .text--search {
+  position: relative;
+}
+.page .content section .text .text--content .text--search input {
+  width: 80%;
+  padding: 20px;
+  padding-left: 20px;
+  outline: none;
+  border-radius: 30px;
+  border: 1px solid lightblue;
+  box-shadow: 0px 9px 13px #a2c2f9;
+}
+.page .content section .text .text--content .text--search .text--search--button {
+  position: absolute;
+  top: 13px;
+  left: 320px;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, #5390ff, #1660e5);
+  border-radius: 27px;
+}
+.page .content section .text .text--content .text--search .text--search--button button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.page .content section .text .text--content .text--search .text--search--button div {
+  padding: 2.5px;
+  margin: 0 4px;
+  background: white;
+  border-radius: 100%;
+}
+.page .content section .text .text--content .text--search .text--search--button:hover {
+  background: rgba(120, 196, 234, 0.347);
+  box-shadow: inset 2px 2px 5px 5px rgba(35, 58, 70, 0.347);
+}
+.page .content section .catogory {
+  margin: 100px 0;
+  text-align: center;
+}
+.page .content section .catogory h2 {
+  display: inline-block;
+  width: 400px;
+}
+.page .content section .catogory div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page .content section .catogory div .cardMenu {
+  width: 200px;
+  border: none;
+  background: linear-gradient(180deg, #eaf0ff 0%, rgba(234, 240, 255, 0) 100%);
+  border-radius: 28px;
+  height: 250px;
+  margin-bottom: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.page .content section .catogory div .cardMenu .logoMenu {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.page .content section .catogory div .cardMenu .logoMenu img {
+  cursor: pointer;
+  border-radius: 100%;
+  padding: auto;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page .content section .catogory div .cardMenu:hover {
+  cursor: pointer;
+  background: linear-gradient(138.79deg, #b0cfff 8.47%, #82b2fe 81.99%);
+  box-shadow: 0px 28px 63px -13px rgba(80, 136, 225, 0.29);
+}
+.page .content section .catogory .doubleButton {
+  display: inline-block;
+  margin-left: 70%;
+}
+.page .content section .catogory .doubleButton .butRight,
+.page .content section .catogory .doubleButton .butLeft {
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100%;
+  color: #1660e6;
+  background: #f9fafb;
+  box-shadow: 5px 1px 10px #5390ff;
+}
+.page .content section .catogory .doubleButton .butRight:hover,
+.page .content section .catogory .doubleButton .butLeft:hover {
+  box-shadow: inset 1px 5px 10px #27406f;
+  background: #1660e6;
+  color: #fff;
+}
+.page .content section .order {
+  margin: 100px 0;
+  text-align: center;
+}
+.page .content section .order div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page .content section .order div .stepOrder {
+  margin-top: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.page .content section .order div .stepOrder .logoOrder {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.page .content section .order div .stepOrder .logoOrder img {
+  cursor: pointer;
+  border-radius: 100%;
+  padding: auto;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page .content section .order div .stepOrder .titleOrder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page .content section .order div .stepOrder .titleOrder p {
+  width: 100%;
+}
+.page .content section .order div .stepOrder .titleOrder p span {
+  padding: 5px 10px;
+  border: 1px dotted orangered;
+  border-radius: 100%;
+}
+.page .content section .order div .stepOrder:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.page .content section .popular {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.page .content section .popular div {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page .content section .popular div .popularDeli {
+  height: 450px;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(45, 172, 218);
+  border-radius: 36px;
+}
+.page .content section .popular div .popularDeli:hover {
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+  color: #fff;
+}
+.page .content section .popular div .popularDeli:hover .logoPopular {
+  background: #fff;
+}
+.page .content section .popular div .popularDeli:hover .pricePopular--but button {
+  color: #1660e6;
+  background: #fff !important;
+}
+.page .content section .popular div .popularDeli .logoPopular {
+  cursor: pointer;
+  margin-top: 25px;
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: 0px 6px 14px 2px #88bee9;
+}
+.page .content section .popular div .popularDeli .logoPopular img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page .content section .popular div .popularDeli h3 {
+  width: 100%;
+}
+.page .content section .popular div .popularDeli .pricePopular {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page .content section .popular div .popularDeli .pricePopular .pricePopular--title {
+  font-weight: 800;
+  font-size: medium;
+  padding-top: 10px;
+}
+.page .content section .popular div .popularDeli .pricePopular .pricePopular--but button {
+  font-size: larger;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+}
+.page .content section .cta {
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  gap: 25px;
+}
+.page .content section .cta .cta--1 img {
+  margin-top: 70px;
+}
+.page .content section .cta .cta--2 h2 {
+  font-size: xxx-large;
+}
+.page .content section .cta .cta--2 .cta--2--p {
+  font-size: smaller;
+  color: gray;
+}
+.page .content section .cta .cta--2 .cta--2_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+}
+.page .content section .cta .cta--2 .cta--2_grid div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+}
+.page .content section .cta .cta--2 .cta--2_grid div i {
+  width: 50px;
+}
+.page .content section .cta .cta--2 .cta--2_grid div p {
+  width: 250px;
+}
+.page .content section .cta .cta--2 .cta--2--but {
+  display: flex;
+  align-items: center;
+}
+.page .content section .cta .cta--2 .cta--2--but button:first-child {
+  cursor: pointer;
+  width: 200px;
+  border-radius: 28px;
+  color: white;
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+.page .content section .cta .cta--2 .cta--2--but button {
+  cursor: pointer;
+  width: 200px;
+  margin-left: 30px;
+  border-radius: 28px;
+  color: #1660e5;
+  background: white;
+  border: 1px solid #5390ff;
+  outline: none;
+  padding: 10px 20px;
+}
+.page .content section .cta .cta--3 h2 {
+  font-size: xxx-large;
+}
+.page .content section .cta .cta--3 .cta--3--p {
+  font-size: smaller;
+  color: gray;
+}
+.page .content section .cta .cta--3 .cta--3_grid {
+  display: grid;
+}
+.page .content section .cta .cta--3 .cta--3_grid div {
+  display: flex;
+  align-items: center;
+}
+.page .content section .cta .cta--3 .cta--3_grid div .number {
+  border: 2px dotted #e89820;
+  border-radius: 100%;
+  padding: 5px;
+  margin-right: 20px;
+}
+.page .content section .cta .cta--3 .cta--3--but img {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.page .content section .cta .cta--4 {
+  margin-left: 90px;
+}
+.page .content section .cta .cta--6 h2 {
+  font-size: xxx-large;
+}
+.page .content section .cta .cta--6 p {
+  font-size: smaller;
+  color: gray;
+}
+.page .content section .cta .cta--6 div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content section .cta .cta--6 div .left {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.page .content section .cta .cta--6 div .left .left--img {
+  border: none;
+  background: #1660e5;
+  border-radius: 100%;
+}
+.page .content section .cta .cta--6 div .left .left--content {
+  display: grid;
+  color: #2e2c49;
+}
+.page .content section .cta .cta--6 div .doubleButton {
+  margin-right: 40px;
+  display: inline-block;
+}
+.page .content section .cta .cta--6 div .doubleButton .butRight,
+.page .content section .cta .cta--6 div .doubleButton .butLeft {
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100%;
+  color: #1660e6;
+  background: #f9fafb;
+  box-shadow: 5px 1px 10px #5390ff;
+}
+.page .content section .cta .cta--6 div .doubleButton .butRight:hover,
+.page .content section .cta .cta--6 div .doubleButton .butLeft:hover {
+  box-shadow: inset 1px 5px 10px #27406f;
+  background: #1660e6;
+  color: #fff;
+}
+.page .content section .useTips {
+  text-align: center;
+}
+.page .content section .useTips h2 {
+  font-size: xxx-large;
+}
+.page .content section .useTips p {
+  font-size: smaller;
+  color: gray;
+}
+.page .content section .useTips div {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content section .useTips div .use {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.page .content section .useTips div .use .picUser {
+  background: #2e2c49;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+.page .content section .useTips div .use .picUser img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  padding: 0px 88px;
+}
+.page .content section .useTips div .use div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.page .content section .useTips div .use div .readMore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.page .content section .useTips div .use div .readMore i {
+  margin-right: 55%;
+}
+.page .content section .useTips div .use div .readMore:hover {
+  transform: scale(0.8);
+}
+.page .content section .useTips .but--all {
+  position: absolute;
+  top: unset;
+  left: 45%;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, #5390ff, #1660e5);
+  border-radius: 27px;
+}
+.page .content section .useTips .but--all button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.page .content section .useTips .but--all div {
+  padding: 2.5px;
+  margin: 0 4px;
+  background: white;
+  border-radius: 100%;
+}
+.page .content section .useTips .but--all:hover {
+  background: rgba(120, 196, 234, 0.347);
+  box-shadow: inset 2px 2px 5px 5px rgba(35, 58, 70, 0.347);
+}
+.page .content .sub {
+  background: #6b95d8;
+  margin: 70px 0;
+}
+.page .content .sub .supscrise {
+  height: 350px;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content .sub .supscrise .supscrise--left {
+  padding-top: 140px;
+  height: 100%;
+  width: auto;
+  border-right: 2px dotted #fff;
+  padding-right: 80px;
+}
+.page .content .sub .supscrise .supscrise--left .inp--sup {
+  position: relative;
+  margin: 30px 0;
+}
+.page .content .sub .supscrise .supscrise--left .inp--sup input {
+  outline: none;
+  border: 1px solid #82b2fe;
+  border-radius: 25px;
+  padding: 18px 15px;
+  width: 60%;
+}
+.page .content .sub .supscrise .supscrise--left .inp--sup div {
+  padding: 0px 10px;
+  position: absolute;
+  top: 10px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+  border: 1px solid #88bee9;
+  border-radius: 28px;
+  height: 37px;
+}
+.page .content .sub .supscrise .supscrise--left .inp--sup div p {
+  justify-content: space-evenly;
+}
+.page .content .sub .supscrise .supscrise--left .inp--sup div button {
+  outline: none;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid #82b2fe;
+  padding: 3px 8px;
+}
+.page .content .sub .supscrise .supscrise--right {
+  width: 500px;
+}
+.page .content .sub .supscrise .supscrise--right button {
+  background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
+  padding: 5px 10px;
+  border-radius: 28px;
+  border: none;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
